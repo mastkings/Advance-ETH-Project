@@ -74,16 +74,16 @@ const User = () => {
           onSubmit={submitAccount}
         >
           <div className="mb-4">
-            <div className="font-semibold text-lg bg-red-300 uppercase text-white mb-4 p-2 rounded shadow-md">
+            <div className="font-semibold text-lg bg-green-300 uppercase text-white mb-4 p-2 rounded shadow-md">
               Create Address
             </div>
-            <label htmlFor="address" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="address" className="text-md font-semibold text-green-700 mb-2">
               Address
             </label>
             <input
               type="text"
               id="address"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Address"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
@@ -91,13 +91,13 @@ const User = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="salt" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="salt" className="text-md font-semibold text-green-700 mb-2">
               Salt
             </label>
             <input
               type="text"
               id="salt"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Salt"
               value={salt}
               onChange={(e) => setSalt(e.target.value)}
@@ -106,7 +106,7 @@ const User = () => {
           </div>
           <button
             type="submit"
-            className="flex bg-red-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-red-600 transition-colors"
+            className="flex bg-green-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-green-600 transition-colors"
           >
             Submit
           </button>
@@ -117,16 +117,16 @@ const User = () => {
           onSubmit={onFormSubmit}
         >
           <div className="mb-4">
-            <div className="font-semibold text-lg bg-red-300 uppercase text-white mb-4 p-2 rounded shadow-md">
+            <div className="font-semibold text-lg bg-green-300 uppercase text-white mb-4 p-2 rounded shadow-md">
               Get Address
             </div>
-            <label htmlFor="newaddress" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="newaddress" className="text-md font-semibold text-green-700 mb-2">
               Address
             </label>
             <input
               type="text"
               id="newaddress"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Address"
               value={newaddress}
               onChange={(e) => setNewAddress(e.target.value)}
@@ -134,13 +134,13 @@ const User = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="newsalt" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="newsalt" className="text-md font-semibold text-green-700 mb-2">
               Salt
             </label>
             <input
               type="number"
               id="newsalt"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Salt"
               value={newsalt}
               onChange={(e) => setNewSalt(e.target.value)}
@@ -149,13 +149,13 @@ const User = () => {
           </div>
           <button
             type="submit"
-            className="flex bg-red-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-red-600 transition-colors"
+            className="flex bg-green-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-green-600 transition-colors"
           >
             Submit
           </button>
         </form>
         {newAddress && (
-          <div className="bg-red-200 py-2 px-4 mt-4 rounded">
+          <div className="bg-green-200 py-2 px-4 mt-4 rounded">
             Address: {newAddress}
           </div>
         )}
@@ -166,11 +166,11 @@ const User = () => {
           className="bg-white p-8 shadow-md rounded-lg mb-4"
           onSubmit={onFund}
         >
-          <div className="font-semibold text-lg bg-red-300 uppercase text-white mb-4 p-2 rounded shadow-md">
+          <div className="font-semibold text-lg bg-green-300 uppercase text-white mb-4 p-2 rounded shadow-md">
             Fund Wallet
           </div>
           <div className="mb-4">
-            <label htmlFor="account" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="account" className="text-md font-semibold text-green-700 mb-2">
               Account
             </label>
             <input
@@ -190,7 +190,7 @@ const User = () => {
             <input
               type="number"
               id="amount"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Amount"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
@@ -199,7 +199,7 @@ const User = () => {
           </div>
           <button
             type="submit"
-            className="flex bg-red-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-red-600 transition-colors"
+            className="flex bg-green-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-green-600 transition-colors"
           >
             Submit
           </button>
@@ -209,17 +209,17 @@ const User = () => {
           className="bg-white p-8 shadow-md rounded-lg"
           onSubmit={checkBalance}
         >
-          <div className="font-semibold text-lg bg-red-300 uppercase text-white mb-4 p-2 rounded shadow-md">
+          <div className="font-semibold text-lg bg-green-300 uppercase text-white mb-4 p-2 rounded shadow-md">
             Wallet Balance
           </div>
           <div className="mb-4">
-            <label htmlFor="balance" className="text-md font-semibold text-red-700 mb-2">
+            <label htmlFor="balance" className="text-md font-semibold text-green-700 mb-2">
               Account
             </label>
             <input
               type="text"
               id="balance"
-              className="border border-red-300 rounded-md w-full py-2 px-3"
+              className="border border-green-300 rounded-md w-full py-2 px-3"
               placeholder="Account"
               value={balance}
               onChange={(e) => setBalance(e.target.value)}
@@ -229,7 +229,7 @@ const User = () => {
           <button
             type="submit"
             onClick={checkBalance}
-            className="flex bg-red-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-red-600 transition-colors"
+            className="flex bg-green-500 text-white py-2 px-4 rounded-md justify-center items-center hover:bg-green-600 transition-colors"
           >
             Submit
           </button>

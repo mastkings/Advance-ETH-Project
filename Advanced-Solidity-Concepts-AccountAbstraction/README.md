@@ -15,7 +15,7 @@ Start Local Hardhat Node: After installing the dependencies, run the following c
 ``npx hardhat compile``
 Deploy the Contract: Open a second terminal and deploy the contract on the local Hardhat node using the following command:
 
-``npx hardhat run scripts/deploy.js --network mumbai``
+``npx hardhat run scripts/deploy.js --network sepolia``
 ``
 
 Start the Frontend: In the second terminal, run the following command to start the application frontend in development mode:
@@ -83,8 +83,8 @@ Feel free to customize and modify this contract to suit your specific use case.
 
 ## Author
 
-[Samuel Paul](https://github.com/samuepaul)
+[[Kings](https://github.com/mastkings)] 
 
 ## License
 
-This project is licensed under the [GPL-3.0 License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).

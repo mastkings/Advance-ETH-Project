@@ -1,9 +1,5 @@
 //import { useGlobalState } from "./store";
 
-
-
-
-
 const Hero = () => {
   //const [connectedAccount] = useGlobalState('connectedAccount')
 

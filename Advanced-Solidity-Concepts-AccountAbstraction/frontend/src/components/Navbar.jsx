@@ -12,8 +12,8 @@ const Navbar = () => {
         
         <div className="flex space-x-2 justify-between items-center font-light text-2l text-white">
         <a href='/'> 
-        <button className="flex space-x-2 hover:cursor-pointer bg-red-500 px-5 py-2 hover:bg-red-600
-        rounded-md shadow-md items-center shadow-red-500 hover:shadow-indigo-800 leading-tight uppercase " >
+        <button className="flex space-x-2 hover:cursor-pointer bg-green-500 px-5 py-2 hover:bg-green-600
+        rounded-md shadow-md items-center shadow-green-500 hover:shadow-gray-800 leading-tight uppercase " >
             <HiOutlineHome className="text-white mr-1"/>
             
              Home </button>
@@ -22,7 +22,7 @@ const Navbar = () => {
     </div>
 
     <div className="flex space-x-2 justify-between items-center font-light text-2xl text-black uppercase"> 
-    <p >EOA Wallet</p>
+    <p >Externally Own Account Wallet</p>
 
     </div>
 
