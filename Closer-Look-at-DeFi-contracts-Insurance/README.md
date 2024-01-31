@@ -59,19 +59,19 @@ The `InsuranceFactory` contract serves as a factory for creating `WalletInsuranc
 To access the repository's contents, download the entire repository. Navigate to the project directory and run the following commands:
 
 ```sh
-npm install
-npx hardhat help
-npx hardhat test
+yarn install
+yarn hardhat help
+yarn hardhat test
 REPORT_GAS=true npx hardhat test
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network mumbai
+yarn hardhat compile
+yarn hardhat run scripts/deploy.js --network sepolia
 ```
 
 Before deploying the contract, configure your `.env` file by renaming `.env.example` and providing your wallet private key.
 
 ## Author
 
-[[Samuel Paul](https://github.com/samuepaul)]
+[[Kings](https://github.com/mastkings)] 
 
 ## License
 
