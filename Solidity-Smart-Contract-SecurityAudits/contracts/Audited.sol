@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
 
-pragma solidity ^0.8.20;
-
+// The StorageVictimAudited contract provides a secure way for users to store and retrieve numeric values associated with their Ethereum addresses.
 contract StorageVictimAudited {
 
-   // Struct to store user and amount
-   struct Storage {
-     address user;
-     uint256 amount;
-   }
+    // Defines a structure to hold an address and an associated numeric value.
+    struct Storage {
+        address user;   // The address of the user.
+        uint256 amount; // The numeric value associated with the user address.
+    }
 
-   // Mapping to store storage information for each address
-   mapping(address => Storage) private storages;
+    // A private mapping that associates each user's address with their Storage data.
+    mapping(address => Storage) private storages;
 
-   // Function to store the given amount in the storage mapping for the calling address
-   function store(uint256 _amount) public {
-     Storage storage str = storages[msg.sender];
-     str.user = msg.sender;
-     str.amount = _amount;
-   }
+    // Allows a user to store a specified numeric value associated with their Ethereum address.
+    function store(uint256 _amount) public {
+        Storage storage str = storages[msg.sender]; // Accesses or initializes the Storage struct for the calling address.
+        str.user = msg.sender;  // Sets the user property to the calling address.
+        str.amount = _amount;   // Sets the amount property to the specified numeric value.
+    }
 
-   // Function to retrieve the stored information for the calling address
-   function getStore() public view returns (address, uint) {       
-     Storage memory str = storages[msg.sender];       
-     return (str.user, str.amount);
-   }
+    // Retrieves the stored information (user address and amount) for the calling address.
+    function getStore() public view returns (address, uint256) {
+        Storage memory str = storages[msg.sender]; // Retrieves the Storage struct for the calling address.
+        return (str.user, str.amount); // Returns the user address and associated numeric value.
+    }
 }

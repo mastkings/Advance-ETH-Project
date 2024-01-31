@@ -1,4 +1,4 @@
-# Security Audit Project
+# Security Audit (Solidity Smart Contract Security)
 
 ## Security Audit Report of StorageVictim Contract (OriginalContract.sol.example)
 
@@ -41,25 +41,29 @@ The contract, although simple, has a vulnerability that could result in unintend
 Download the codes by downloading the entire repository which will give you access to other contencts of the repository.In the project directory,  run:
 
 ```shell
- npm install
+ yarn install
+```
+
+```shell
+ yarn hardhat compile
 ```
 
 After installing the dependences, run the test file by using the following command:
 
 ```shell
 
-npx hardhat test
+yarn hardhat test
 ```
 
 To deploy the contract, setup your `env`, paste your wallet private key where necessary and run the following command:
 
 ```shell
-npx hardhat run scripts/deploy.js --network mumbai
+yarn hardhat run scripts/deploy.js --network sepolia
 ```
 
 ## Author
 
-[Samuel Paul](https://github.com/samuepaul)
+[[Kings](https://github.com/mastkings)] 
 
 ## License
 

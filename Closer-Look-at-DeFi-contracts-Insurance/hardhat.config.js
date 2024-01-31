@@ -11,7 +11,7 @@ module.exports = {
     // set sepolia testnet for deploying smart contract
     sepolia: {
       url: "https://eth-sepolia.g.alchemy.com/v2/9gO8RVbokTEMFpjvXe_UooQtrZbNJ79V",
-      accounts: ["9673488150c05380c2d245a4b7926252132489ecc9f19fd3513e926993cce2d1"],
+      accounts: ["Your Private Key Here"],
     }
   },
   solidity: {
